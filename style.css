@@ -1,0 +1,270 @@
+/* temporary */
+img {
+  width: 3rem;
+  height: auto;
+}
+
+a svg {
+  width: 1rem;
+  height: auto;
+  color: black;
+}
+/* --------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-me .body,
+.project-card .description,
+.contacts p {
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.container:nth-of-type(3) {
+  background-color: cadetblue;
+  padding: 2rem 3rem;
+}
+
+section {
+  width: 100%;
+  max-width: 40rem;
+  border: 1px solid red;
+}
+
+.my-work {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.my-work .title {
+  font-size: 1.5rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 2.5rem;
+}
+
+.project-card {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 3rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.project-card .description {
+  font-size: 0.8rem;
+}
+
+.screenshot {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2rem 2rem;
+  color: white;
+}
+
+.screenshot.one {
+  background-color: red;
+}
+
+.screenshot.two {
+  background-color: plum;
+}
+
+.screenshot.three {
+  background-color: green;
+}
+
+.screenshot.four {
+  background-color: pink;
+}
+
+.screenshot.five {
+  background-color: orange;
+}
+
+.screenshot.six {
+  background-color: deepskyblue;
+}
+
+.name-and-links,
+.my-work .description {
+  padding: 0 0.8rem;
+}
+
+.name-and-links {
+  display: flex;
+}
+
+.name-and-links .name {
+  margin-right: auto;
+}
+
+.name-and-links .links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contacts {
+  border: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.contacts .title {
+  font-size: 1.2rem;
+}
+
+.contacts .content {
+  width: 65%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.phone-number,
+.email-address {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.email-address {
+  margin-top: -1rem;
+}
+.address {
+  margin-top: -0.4rem;
+}
+
+.contacts .links {
+  display: flex;
+  gap: 1rem;
+}
+
+.contacts .links svg {
+  width: 1.5rem;
+}
+
+.footer-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-image {
+  width: 23rem;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-image {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container,
+  .container:nth-of-type(3) {
+    padding: 1rem;
+  }
+
+  .my-work .title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding-bottom: 5rem;
+    gap: 1rem;
+  }
+
+  .name-and-links .name {
+    font-size: 1.8rem;
+  }
+
+  .name-and-links .links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .name-and-links svg {
+    width: 1.8rem;
+  }
+
+  .project-card .description {
+    font-size: 1.3rem;
+  }
+
+  .screenshot {
+    font-size: 2.5rem;
+    padding: 4rem 3rem;
+  }
+
+  .name-and-links,
+  .my-work .description {
+    padding: 0 1.2rem;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts .content {
+    width: 100%;
+    font-size: 1.3rem;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .contacts .title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+
+  .footer-image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .contacts .links {
+    align-self: center;
+  }
+
+  .contacts .links svg {
+    width: 2.5rem;
+  }
+}
