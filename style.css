@@ -1,15 +1,8 @@
-/* temporary */
-img {
-  width: 3rem;
-  height: auto;
-}
-
 a svg {
   width: 1rem;
   height: auto;
   color: black;
 }
-/* --------- */
 
 * {
   box-sizing: border-box;
